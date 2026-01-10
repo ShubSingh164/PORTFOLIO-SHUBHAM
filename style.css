@@ -633,6 +633,20 @@ body:hover .cursor-glow {
     transform: translateY(-3px);
 }
 
+/* Codeforces Icon */
+.cf-icon {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.codeforces-link:hover {
+    border-color: #1890ff;
+    color: #1890ff;
+    background: rgba(24, 144, 255, 0.1);
+}
+
 /* Hero Image */
 .hero-image {
     position: relative;
