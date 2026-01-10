@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of a passionate Software Developer & UI/UX Designer. Crafting beautiful digital experiences with clean code and intuitive design.">
+    <title>Shubham | Software Developer & UI/UX Designer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-icon"><i class="ph ph-code"></i></span>
+                <span class="logo-text">Shubham<span class="accent">.</span></span>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary">
+                    <span>Hire Me</span>
+                    <i class="ph ph-arrow-right"></i>
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-grid"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="ph ph-sparkle"></i>
+                    <span>Open to Work</span>
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="greeting">Hello, I'm</span>
+                    <span class="name">Shubham</span>
+                    <span class="role-wrapper">
+                        <span class="static-text">A</span>
+                        <span class="typing-text" id="typingText"></span>
+                        <span class="cursor">|</span>
+                    </span>
+                </h1>
+
+                <p class="hero-description">
+                    Computer Science and Engineering student at Chandigarh University,
+                    passionate about crafting beautiful digital experiences.
+                    I blend clean code with intuitive design to create websites and apps
+                    that users love. Let's build something amazing together.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary btn-lg">
+                        <span>View My Work</span>
+                        <i class="ph ph-arrows-out-cardinal"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline btn-lg">
+                        <i class="ph ph-download-simple"></i>
+                        <span>Download CV</span>
+                    </a>
+                </div>
+
+                <div class="hero-social">
+                    <span class="social-label">Follow me</span>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i class="ph ph-github-logo"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="ph ph-linkedin-logo"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Dribbble">
+                            <i class="ph ph-dribbble-logo"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="ph ph-x-logo"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <div class="image-glow"></div>
+                    <div class="image-border"></div>
+                    <img src="profile.png" alt="Shubham - Software Developer & UI/UX Designer" class="profile-image">
+                </div>
+                <div class="floating-card card-1">
+                    <i class="ph ph-figma-logo"></i>
+                    <span>UI/UX Design</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="ph ph-brackets-curly"></i>
+                    <span>Clean Code</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow">
+                <i class="ph ph-caret-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="ph ph-folder-notch-open"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" data-target="10">0</span>
+                        <span class="stat-plus">+</span>
+                        <span class="stat-label">Personal Projects</span>
+                    </div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="ph ph-code"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" data-target="8">0</span>
+                        <span class="stat-plus">+</span>
+                        <span class="stat-label">Technologies Learned</span>
+                    </div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="ph ph-book-open"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" data-target="1">0</span>
+                        <span class="stat-plus"></span>
+                        <span class="stat-label">Book Published</span>
+                    </div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="ph ph-git-commit"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" data-target="200">0</span>
+                        <span class="stat-plus">+</span>
+                        <span class="stat-label">GitHub Commits</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="ph ph-user-circle"></i> About Me</span>
+                <h2 class="section-title">Turning Ideas Into <span class="gradient-text">Digital Reality</span></h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image reveal-left">
+                    <div class="image-frame">
+                        <div class="frame-border"></div>
+                        <img src="profile.png" alt="Shubham" class="about-image-photo">
+                        <div class="experience-badge">
+                            <span class="exp-number">1+</span>
+                            <span class="exp-text">Years Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content reveal-right">
+                    <h3 class="about-subtitle">Fresh Perspective, Endless Creativity</h3>
+                    <p class="about-text">
+                        I'm a Computer Science and Engineering student at Chandigarh University
+                        with a passion for creating beautiful, functional digital experiences.
+                        My journey began with curiosity about how things work and evolved into
+                        a love for both coding and design.
+                    </p>
+                    <p class="about-text">
+                        I believe great software should be both powerful and delightful to use.
+                        That's why I focus on the intersection of development and design,
+                        ensuring every project I work on is technically solid and visually stunning.
+                    </p>
+
+                    <div class="skills-section">
+                        <h4 class="skills-title">My Skills</h4>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">UI/UX Design</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">HTML/CSS</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">React.js</span>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag"><i class="ph ph-briefcase"></i> Services</span>
+                <h2 class="section-title">What I <span class="gradient-text">Offer</span></h2>
+                <p class="section-description">
+                    I provide comprehensive digital solutions that help bring your ideas to life
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card reveal-up">
+                    <div class="service-icon">
+                        <i class="ph ph-code"></i>
+                    </div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-description">
+                        Building responsive, fast, and modern websites using the latest
+                        technologies and best practices.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="ph ph-check-circle"></i> Responsive Design</li>
+                        <li><i class="ph ph-check-circle"></i> Clean Code</li>
+                        <li><i class="ph ph-check-circle"></i> Performance Optimized</li>
+                    </ul>
+                    <div class="service-hover-border"></div>
+                </div>
+
+                <div class="service-card featured reveal-up">
+                    <div class="featured-badge">Popular</div>
+                    <div class="service-icon">
+                        <i class="ph ph-figma-logo"></i>
+                    </div>
+                    <h3 class="service-title">UI/UX Design</h3>
+                    <p class="service-description">
+                        Creating intuitive and beautiful interfaces that users love.
+                        From wireframes to high-fidelity prototypes in Figma.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="ph ph-check-circle"></i> User Research</li>
+                        <li><i class="ph ph-check-circle"></i> Wireframing</li>
+                        <li><i class="ph ph-check-circle"></i> Prototyping</li>
+                    </ul>
+                    <div class="service-hover-border"></div>
+                </div>
+
+                <div class="service-card reveal-up">
+                    <div class="service-icon">
+                        <i class="ph ph-pen-nib"></i>
+                    </div>
+                    <h3 class="service-title">Content Writer & Author</h3>
+                    <p class="service-description">
+                        Crafting compelling content and stories that captivate readers.
+                        From blog posts to published books.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="ph ph-check-circle"></i> Book Writing</li>
+                        <li><i class="ph ph-check-circle"></i> Blog & Articles</li>
+                        <li><i class="ph ph-check-circle"></i> Technical Docs</li>
+                    </ul>
+                    <div class="service-hover-border"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag"><i class="ph ph-folder-notch"></i> Portfolio</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-description">
+                    A showcase of my recent work and creative endeavors
+                </p>
+            </div>
+
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                <button class="filter-btn" data-filter="development">Development</button>
+                <button class="filter-btn" data-filter="writing">Writing</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Web Development Projects -->
+                <div class="project-card" data-category="development">
+                    <div class="project-image">
+                        <img src="towplate_demo.webp" alt="TOWPLATE - Car Rental App" class="project-media">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link project-preview" data-media="towplate_demo.webp"
+                                    data-type="video" aria-label="View Project">
+                                    <i class="ph ph-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Web Development</span>
+                        <h3 class="project-title">TOWPLATE</h3>
+                        <p class="project-description">Car rental and towing service web application</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="development">
+                    <div class="project-image">
+                        <img src="gocarbon_website_demo.webp" alt="GO GREEN - Carbon Footprint Tracker"
+                            class="project-media">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link project-preview" data-media="gocarbon_website_demo.webp"
+                                    data-type="video" aria-label="View Project">
+                                    <i class="ph ph-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Web Development</span>
+                        <h3 class="project-title">GO GREEN</h3>
+                        <p class="project-description">Environmental sustainability and carbon footprint tracker</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="development">
+                    <div class="project-image">
+                        <div class="project-placeholder gradient-5">
+                            <i class="ph ph-warning-octagon"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link confidential-preview" data-confidential="true"
+                                    aria-label="View Project">
+                                    <i class="ph ph-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Web Development</span>
+                        <h3 class="project-title">AssuredGO: Accident Alert System</h3>
+                        <p class="project-description">Real-time accident detection and emergency notification system
+                        </p>
+                    </div>
+                </div>
+
+                <!-- UI/UX Design Projects -->
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="coffee-application-design.png" alt="Coffee App Redesign" class="project-media">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link project-preview"
+                                    data-media="coffee-application-design.png" data-type="image"
+                                    aria-label="View Project">
+                                    <i class="ph ph-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">UI/UX Design</span>
+                        <h3 class="project-title">Coffee App Redesign</h3>
+                        <p class="project-description">Modern UI redesign for a coffee ordering mobile application</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="kin_upi_app_design.png" alt="Kin UPI Payment App" class="project-media">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link project-preview" data-media="kin_upi_app_design.png"
+                                    data-type="image" aria-label="View Project">
+                                    <i class="ph ph-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">UI/UX Design</span>
+                        <h3 class="project-title">Kin UPI Payment App</h3>
+                        <p class="project-description">Intuitive payment interface for seamless UPI transactions</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="go-green-redesign.png" alt="Go Green App Redesign" class="project-media">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link project-preview" data-media="go-green-redesign.png"
+                                    data-type="image" aria-label="View Project">
+                                    <i class="ph ph-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">UI/UX Design</span>
+                        <h3 class="project-title">Go Green App Redesign</h3>
+                        <p class="project-description">Complete UI overhaul for environmental awareness app</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="restaurant_app_design.png" alt="Restaurant App Design" class="project-media">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link project-preview" data-media="restaurant_app_design.png"
+                                    data-type="image" aria-label="View Project">
+                                    <i class="ph ph-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">UI/UX Design</span>
+                        <h3 class="project-title">Restaurant App Design</h3>
+                        <p class="project-description">Modern dining experience app with intuitive ordering interface
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Book / Writing -->
+                <div class="project-card" data-category="writing">
+                    <div class="project-image">
+                        <img src="neural_sovereignty_book.png" alt="Neural Sovereignty Book Cover"
+                            class="project-media">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link project-preview"
+                                    data-media="neural_sovereignty_book.png" data-type="image" aria-label="View Book">
+                                    <i class="ph ph-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Published Book</span>
+                        <h3 class="project-title">Neural Sovereignty</h3>
+                        <p class="project-description">A thought-provoking book exploring the intersection of AI and
+                            human autonomy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info reveal-left">
+                    <span class="section-tag"><i class="ph ph-envelope"></i> Get in Touch</span>
+                    <h2 class="section-title">Let's Work <span class="gradient-text">Together</span></h2>
+                    <p class="contact-description">
+                        Have a project in mind or just want to say hello?
+                        I'd love to hear from you. Let's create something amazing!
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="ph ph-envelope-simple"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:Shubham21092kumar@gmail.com">Shubham21092kumar@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="ph ph-map-pin"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Location</span>
+                                <span>Mohali, India</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="ph ph-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:+918684989206">+91 8684-989206</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <span>Connect with me</span>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="ph ph-github-logo"></i></a>
+                            <a href="#" class="social-link"><i class="ph ph-linkedin-logo"></i></a>
+                            <a href="#" class="social-link"><i class="ph ph-dribbble-logo"></i></a>
+                            <a href="#" class="social-link"><i class="ph ph-x-logo"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper reveal-right">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            <span class="form-line"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            <span class="form-line"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+                            <span class="form-line"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell me about your project..."
+                                required></textarea>
+                            <span class="form-line"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg btn-full">
+                            <span>Send Message</span>
+                            <i class="ph ph-paper-plane-tilt"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="nav-logo">
+                        <span class="logo-icon"><i class="ph ph-code"></i></span>
+                        <span class="logo-text">Shubham<span class="accent">.</span></span>
+                    </a>
+                    <p>Creating digital experiences that inspire and delight.</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">UI/UX Design</a></li>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Content Writing</a></li>
+                            <li><a href="#">Book Author</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Shubham. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+                    <a href="#" aria-label="Dribbble"><i class="ph ph-dribbble-logo"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Media Lightbox Modal (Images & Videos) -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+            <i class="ph ph-x"></i>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="Project Preview" id="lightboxImage">
+            <img src="" alt="Project Video Preview" id="lightboxVideo" class="lightbox-video">
+        </div>
+    </div>
+
+    <!-- Confidential Popup Modal -->
+    <div class="confidential-popup" id="confidentialPopup">
+        <button class="confidential-close" id="confidentialClose" aria-label="Close">
+            <i class="ph ph-x"></i>
+        </button>
+        <div class="confidential-content">
+            <i class="ph ph-lock-key confidential-icon"></i>
+            <h2 class="confidential-title">CONFIDENTIAL</h2>
+            <p class="confidential-text">This project contains sensitive information and cannot be displayed publicly.
+            </p>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="ph ph-caret-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
