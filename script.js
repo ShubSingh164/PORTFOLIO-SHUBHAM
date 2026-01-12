@@ -311,8 +311,10 @@ if (contactForm) {
 // ===== Smooth Scroll for Internal Links =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        // Skip if this is a project preview or confidential preview link
-        if (this.classList.contains('project-preview') || this.classList.contains('confidential-preview')) {
+        // Skip if this is a project preview, confidential preview, or resume preview link
+        if (this.classList.contains('project-preview') ||
+            this.classList.contains('confidential-preview') ||
+            this.id === 'openResumePreview') {
             return;
         }
         e.preventDefault();
@@ -481,3 +483,47 @@ if (confidentialPopup) {
         }
     });
 }
+
+// ===== Resume Preview Modal =====
+const resumeModal = document.getElementById('resumeModal');
+const resumeModalClose = document.getElementById('resumeModalClose');
+const openResumePreview = document.getElementById('openResumePreview');
+
+// Open resume modal
+if (openResumePreview) {
+    openResumePreview.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (resumeModal) {
+            resumeModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+    });
+}
+
+// Close resume modal
+function closeResumeModal() {
+    if (resumeModal) {
+        resumeModal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+}
+
+if (resumeModalClose) {
+    resumeModalClose.addEventListener('click', closeResumeModal);
+}
+
+// Close on clicking outside content
+if (resumeModal) {
+    resumeModal.addEventListener('click', (e) => {
+        if (e.target === resumeModal) {
+            closeResumeModal();
+        }
+    });
+}
+
+// Close on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && resumeModal && resumeModal.classList.contains('active')) {
+        closeResumeModal();
+    }
+});

@@ -100,9 +100,9 @@
                         <span>View My Work</span>
                         <i class="ph ph-arrows-out-cardinal"></i>
                     </a>
-                    <a href="shubham-resume.pdf" download class="btn btn-outline btn-lg">
-                        <i class="ph ph-download-simple"></i>
-                        <span>Download CV</span>
+                    <a href="#" class="btn btn-outline btn-lg" id="openResumePreview">
+                        <i class="ph ph-eye"></i>
+                        <span>View CV</span>
                     </a>
                 </div>
 
@@ -710,6 +710,27 @@
             <h2 class="confidential-title">CONFIDENTIAL</h2>
             <p class="confidential-text">This project contains sensitive information and cannot be displayed publicly.
             </p>
+        </div>
+    </div>
+
+    <!-- Resume Preview Modal -->
+    <div class="resume-modal" id="resumeModal">
+        <button class="resume-modal-close" id="resumeModalClose" aria-label="Close">
+            <i class="ph ph-x"></i>
+        </button>
+        <div class="resume-modal-content">
+            <div class="resume-header">
+                <h2 class="resume-title"><i class="ph ph-file-pdf"></i> My Resume</h2>
+            </div>
+            <div class="resume-viewer">
+                <iframe src="shubham_resume.pdf" id="resumeFrame" title="Resume Preview"></iframe>
+            </div>
+            <div class="resume-actions">
+                <a href="shubham_resume.pdf" download class="btn btn-primary btn-lg resume-download-btn">
+                    <i class="ph ph-download-simple"></i>
+                    <span>Download CV</span>
+                </a>
+            </div>
         </div>
     </div>
 
